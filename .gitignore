@@ -1,0 +1,6 @@
+/dist
+/doc-dist
+/node_modules
+.idea
+pnpm-lock.yaml
+.DS_Store

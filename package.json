@@ -1,0 +1,53 @@
+{
+  "name": "html-to-ppt",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/html-to-ppt.cjs.js",
+  "module": "./dist/html-to-ppt.es.js",
+  "browser": "./dist/html-to-ppt.umd.js",
+  "types": "./dist/html-to-ppt.d.ts",
+  "exports": {
+    ".": {
+      "browser": "./dist/html-to-ppt.umd.js",
+      "import": "./dist/html-to-ppt.es.js",
+      "require": "./dist/html-to-ppt.cjs.js"
+    }
+  },
+  "description": "HTML编辑工具，并将HTML转换为PPT",
+  "keywords": [
+    "html",
+    "ppt",
+    "editor"
+  ],
+  "author": "bowen <478542997@qq.com>",
+  "scripts": {
+    "dev": "vite -c doc/vite.config.ts",
+    "build:lib": "vite build -c vite.config.ts",
+    "build:doc": "vite build -c doc/vite.config.ts",
+    "build": "pnpm build:lib && pnpm build:doc",
+    "preview": "vite preview -c doc/vite.config.ts"
+  },
+  "homepage": "https://github.com/Ddbor/htmlToPPT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ddbor/htmlToPPT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ddbor/htmlToPPT/issues"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.20.0",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/node": "^24.10.1",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "prettier": "^3.6.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

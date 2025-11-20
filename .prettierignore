@@ -1,0 +1,9 @@
+node_modules/
+dist/
+doc-dist/
+.vscode/
+.idea/
+pnpm-lock.yaml
+# 其他
+*.md
+doc/public/
