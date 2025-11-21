@@ -1,7 +1,7 @@
 import { getChildRelativeToParent } from './element'
 
-let helperClassName = 'html-to-ppt-helper'
-let hoverBoxClassName = 'html-to-ppt-hover-box'
+export let helperClassName = 'html-to-ppt-helper'
+export let hoverBoxClassName = 'html-to-ppt-hover-box'
 
 const getHelperElement = (boundaryElement: Element) => {
   return boundaryElement.querySelector(`.${helperClassName}`) as HTMLElement
@@ -35,7 +35,7 @@ export const appendHelperElement = (boundaryElement: Element) => {
   getHelperElement(boundaryElement)?.remove()
   getHoverBoxElement(boundaryElement)?.remove()
 
-  const position = window.getComputedStyle(boundaryElement).getPropertyValue('position')
+  const position = getComputedStyle(boundaryElement).getPropertyValue('position')
 
   if (!['relative', 'absolute', 'fixed', 'sticky'].includes(position)) {
     ;(boundaryElement as HTMLElement).style.position = 'relative'

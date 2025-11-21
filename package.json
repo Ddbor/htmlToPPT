@@ -52,6 +52,7 @@
     "vite-plugin-dts": "^4.5.4"
   },
   "dependencies": {
-    "interactjs": "^1.10.27"
+    "interactjs": "^1.10.27",
+    "pptxgenjs": "^4.0.1"
   }
 }
