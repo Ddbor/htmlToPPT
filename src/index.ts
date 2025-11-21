@@ -1,5 +1,6 @@
-import { appendHelperElement, getElement } from "./utils/element";
+import { appendHelperElement } from "./utils/helper";
 import { bindEvent } from "./utils/event";
+import { getElement } from "./utils/element";
 
 interface EditOptions {
   /**
